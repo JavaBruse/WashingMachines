@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.jar]
+@="jarfile"
+
+[HKEY_CLASSES_ROOT\jarfile]
+@="Java Archive"
+"FriendlyTypeName"="@shell32.dll,-897"
+
+[HKEY_CLASSES_ROOT\jarfile\shell]
+
+[HKEY_CLASSES_ROOT\jarfile\shell\open]
+@="Run with Java 17"
+
+[HKEY_CLASSES_ROOT\jarfile\shell\open\command]
+@="\"C:\\Program Files\\Java\\jdk-17.0.13\\bin\\javaw.exe\" -jar \"%1\" %*"
